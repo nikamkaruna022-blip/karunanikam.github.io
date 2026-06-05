@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    background: #0f172a;
+}
+
+/* Glass Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    background: rgba(2,6,23,0.6);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+nav a {
+    color: #cbd5f5;
+    margin: 0 12px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.profile {
+    width: 140px;
+    border-radius: 50%;
+    border: 3px solid #38bdf8;
+    margin-bottom: 15px;
+}
+
+/* Gradient Text */
+.hero span {
+    background: linear-gradient(90deg, #38bdf8, #818cf8);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: linear-gradient(90deg, #38bdf8, #6366f1);
+    color: white;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Sections */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Skills */
+.skill {
+    margin: 20px auto;
+    width: 60%;
+}
+
+.bar {
+    background: #1e293b;
+    height: 8px;
+    border-radius: 10px;
+}
+
+.bar div {
+    height: 8px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #38bdf8, #6366f1);
+}
+
+/* Project Cards (Glass Effect) */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 25px;
+    width: 260px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    margin: auto;
+}
+
+input, textarea {
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #1e293b;
+    color: white;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #020617;
+}
+
+/* Responsive */
+@media(max-width:768px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill {
+        width: 90%;
+    }
+}
